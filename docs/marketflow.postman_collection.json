@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "0d2c6f20-bf4e-4896-bb59-a71468db1548",
+		"name": "marketflow",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "39061133"
+	},
+	"item": [
+		{
+		  "name": "prices/latest/BTCUSDT",
+		  "request": {
+			"method": "GET",
+			"header": [],
+			"url": "http://localhost:8080/prices/latest/BTCUSDT"
+		  },
+		  "response": []
+		},
+		{
+		  "name": "prices/latest/binance/BTCUSDT",
+		  "request": {
+			"method": "GET",
+			"header": [],
+			"url": "http://localhost:8080/prices/latest/binance/BTCUSDT"
+		  },
+		  "response": []
+		},
+		{
+		  "name": "GET /prices/highest/BTCUSDT",
+		  "request": {
+			"method": "GET",
+			"header": [],
+			"url": "http://localhost:8080/prices/highest/BTCUSDT"
+		  },
+		  "response": []
+		},
+		{
+		  "name": "GET /prices/highest/binance/BTCUSDT?period=1m",
+		  "request": {
+			"method": "GET",
+			"header": [],
+			"url": {
+			  "raw": "http://localhost:8080/prices/highest/binance/BTCUSDT?period=1m",
+			  "host": ["localhost"],
+			  "port": "8080",
+			  "path": ["prices", "highest", "binance", "BTCUSDT"],
+			  "query": [{ "key": "period", "value": "1m" }]
+			}
+		  },
+		  "response": []
+		},
+		{
+		  "name": "GET /prices/lowest/binance/BTCUSDT?period=1m",
+		  "request": {
+			"method": "GET",
+			"header": [],
+			"url": {
+			  "raw": "http://localhost:8080/prices/lowest/binance/BTCUSDT?period=1m",
+			  "host": ["localhost"],
+			  "port": "8080",
+			  "path": ["prices", "lowest", "binance", "BTCUSDT"],
+			  "query": [{ "key": "period", "value": "1m" }]
+			}
+		  },
+		  "response": []
+		},
+		{
+		  "name": "GET /prices/average/binance/BTCUSDT?period=1m",
+		  "request": {
+			"method": "GET",
+			"header": [],
+			"url": {
+			  "raw": "http://localhost:8080/prices/average/binance/BTCUSDT?period=1m",
+			  "host": ["localhost"],
+			  "port": "8080",
+			  "path": ["prices", "average", "binance", "BTCUSDT"],
+			  "query": [{ "key": "period", "value": "1m" }]
+			}
+		  },
+		  "response": []
+		},
+		{
+		  "name": "POST /mode/test",
+		  "request": {
+			"method": "POST",
+			"header": [],
+			"url": "http://localhost:8080/mode/test"
+		  },
+		  "response": []
+		},
+		{
+		  "name": "POST /mode/live",
+		  "request": {
+			"method": "POST",
+			"header": [],
+			"url": "http://localhost:8080/mode/live"
+		  },
+		  "response": []
+		},
+		{
+		  "name": "GET /health",
+		  "request": {
+			"method": "GET",
+			"header": [],
+			"url": "http://localhost:8080/health"
+		  },
+		  "response": []
+		}
+	  ]
+	}
